@@ -1,0 +1,122 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Sample", "samples\Ling.FluentValidation.Sample\Ling.FluentValidation.Sample.csproj", "{FA356906-87B5-4D2F-9AD2-A25460E24AA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Sample.Contracts", "samples\Ling.FluentValidation.Sample.Contracts\Ling.FluentValidation.Sample.Contracts.csproj", "{3FCDA628-745C-45E2-B197-4BC30DF3A318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{D6DFA19A-E5D5-4FCE-8E99-3AF2BA345762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{FDE8570F-90CA-46E6-99F7-DC5DACFD676C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation", "src\Ling.FluentValidation\Ling.FluentValidation.csproj", "{F5B83D14-9F55-4325-B3C4-F9402705B065}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Annotations", "src\Ling.FluentValidation.Annotations\Ling.FluentValidation.Annotations.csproj", "{A65BFC6A-C983-4A68-AC63-5359D426B16C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8C2C13EC-AA31-498B-9583-9253555C7FD6}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Generators", "src\Ling.FluentValidation.Generators\Ling.FluentValidation.Generators.csproj", "{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{91CBEC13-35DE-49BD-A550-3F028AC109D7}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Directory.Build.props = tests\Directory.Build.props
+		tests\Directory.Packages.props = tests\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Analyzers", "src\Ling.FluentValidation.Analyzers\Ling.FluentValidation.Analyzers.csproj", "{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.CodeFixes", "src\Ling.FluentValidation.CodeFixes\Ling.FluentValidation.CodeFixes.csproj", "{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Analyzers.Test", "tests\Ling.FluentValidation.Analyzers.Test\Ling.FluentValidation.Analyzers.Test.csproj", "{4FD71A59-87BD-445F-924B-63A38A3AC208}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Generators.Test", "tests\Ling.FluentValidation.Generators.Test\Ling.FluentValidation.Generators.Test.csproj", "{A611134E-94FE-4405-9799-B790B634D10D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ling.FluentValidation.Common", "src\Ling.FluentValidation.Common\Ling.FluentValidation.Common.shproj", "{80AB8B43-1A17-4DCB-877D-E774230C2126}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ling.FluentValidation.Test", "tests\Ling.FluentValidation.Test\Ling.FluentValidation.Test.csproj", "{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA356906-87B5-4D2F-9AD2-A25460E24AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA356906-87B5-4D2F-9AD2-A25460E24AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA356906-87B5-4D2F-9AD2-A25460E24AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA356906-87B5-4D2F-9AD2-A25460E24AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCDA628-745C-45E2-B197-4BC30DF3A318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCDA628-745C-45E2-B197-4BC30DF3A318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCDA628-745C-45E2-B197-4BC30DF3A318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCDA628-745C-45E2-B197-4BC30DF3A318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B83D14-9F55-4325-B3C4-F9402705B065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B83D14-9F55-4325-B3C4-F9402705B065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B83D14-9F55-4325-B3C4-F9402705B065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B83D14-9F55-4325-B3C4-F9402705B065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65BFC6A-C983-4A68-AC63-5359D426B16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65BFC6A-C983-4A68-AC63-5359D426B16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65BFC6A-C983-4A68-AC63-5359D426B16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65BFC6A-C983-4A68-AC63-5359D426B16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD71A59-87BD-445F-924B-63A38A3AC208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD71A59-87BD-445F-924B-63A38A3AC208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD71A59-87BD-445F-924B-63A38A3AC208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD71A59-87BD-445F-924B-63A38A3AC208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A611134E-94FE-4405-9799-B790B634D10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A611134E-94FE-4405-9799-B790B634D10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A611134E-94FE-4405-9799-B790B634D10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A611134E-94FE-4405-9799-B790B634D10D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA356906-87B5-4D2F-9AD2-A25460E24AA8} = {D6DFA19A-E5D5-4FCE-8E99-3AF2BA345762}
+		{3FCDA628-745C-45E2-B197-4BC30DF3A318} = {D6DFA19A-E5D5-4FCE-8E99-3AF2BA345762}
+		{F5B83D14-9F55-4325-B3C4-F9402705B065} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{A65BFC6A-C983-4A68-AC63-5359D426B16C} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{68B3D5E9-FAEA-401F-86F1-313DFBFDBD32} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{DB42182C-7BE7-43B8-BDB9-8C86AEBF4BDB} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{D182447C-E4B1-4D51-96FA-B7BC83FDCEFE} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{4FD71A59-87BD-445F-924B-63A38A3AC208} = {91CBEC13-35DE-49BD-A550-3F028AC109D7}
+		{A611134E-94FE-4405-9799-B790B634D10D} = {91CBEC13-35DE-49BD-A550-3F028AC109D7}
+		{80AB8B43-1A17-4DCB-877D-E774230C2126} = {8C2C13EC-AA31-498B-9583-9253555C7FD6}
+		{AB51C95A-0E2C-454A-81DA-EC9C0FEFD0DF} = {91CBEC13-35DE-49BD-A550-3F028AC109D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25BE0111-F66B-455E-9DC1-A3B6493F6A4D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\Ling.FluentValidation.Common\Ling.FluentValidation.Common.projitems*{68b3d5e9-faea-401f-86f1-313dfbfdbd32}*SharedItemsImports = 5
+		src\Ling.FluentValidation.Common\Ling.FluentValidation.Common.projitems*{80ab8b43-1a17-4dcb-877d-e774230c2126}*SharedItemsImports = 13
+		src\Ling.FluentValidation.Common\Ling.FluentValidation.Common.projitems*{d182447c-e4b1-4d51-96fa-b7bc83fdcefe}*SharedItemsImports = 5
+		src\Ling.FluentValidation.Common\Ling.FluentValidation.Common.projitems*{db42182c-7be7-43b8-bdb9-8c86aebf4bdb}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

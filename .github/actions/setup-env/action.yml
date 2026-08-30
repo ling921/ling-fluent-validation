@@ -1,0 +1,20 @@
+name: Setup Environment
+description: Sets up the .NET SDK used to build and test the repository
+
+inputs:
+  dotnet-version:
+    description: One or more .NET SDK channels to install
+    required: false
+    default: 10.0.x
+
+runs:
+  using: composite
+  steps:
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v6
+      with:
+        dotnet-version: ${{ inputs.dotnet-version }}
+
+    - name: Show .NET information
+      shell: bash
+      run: dotnet --info
