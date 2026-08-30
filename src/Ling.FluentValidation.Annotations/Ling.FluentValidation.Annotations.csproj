@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+    <PackageId>Ling.FluentValidation.Annotations</PackageId>
+    <Authors>ling921</Authors>
+    <Description>Dependency-free validation annotations for Ling.FluentValidation.</Description>
+    <PackageTags>ling, validation, annotations, analyzers</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ling921/fluent-validation-generator</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddCompilerAssets</TargetsForTfmSpecificContentInPackage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all" />
+    <PackageReference Include="PolySharp" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <ProjectReference Include="..\Ling.FluentValidation.Analyzers\Ling.FluentValidation.Analyzers.csproj" ReferenceOutputAssembly="false" PrivateAssets="all" />
+    <ProjectReference Include="..\Ling.FluentValidation.CodeFixes\Ling.FluentValidation.CodeFixes.csproj" ReferenceOutputAssembly="false" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Target Name="_AddCompilerAssets" Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <ItemGroup>
+      <TfmSpecificPackageFile Include="$(MSBuildThisFileDirectory)..\Ling.FluentValidation.Analyzers\bin\$(Configuration)\netstandard2.0\Ling.FluentValidation.Analyzers.dll" PackagePath="analyzers/dotnet/cs" />
+      <TfmSpecificPackageFile Include="$(MSBuildThisFileDirectory)..\Ling.FluentValidation.CodeFixes\bin\$(Configuration)\netstandard2.0\Ling.FluentValidation.CodeFixes.dll" PackagePath="analyzers/dotnet/cs" />
+    </ItemGroup>
+  </Target>
+
+  <!-- Package Content -->
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="README.zh-CN.md" Pack="true" PackagePath="" />
+    <None Include="..\..\assets\icon.png" Visible="false" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>

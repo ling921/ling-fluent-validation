@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Luanch Debugger": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\..\\samples\\Ling.FluentValidation.Sample\\Ling.FluentValidation.Sample.csproj"
+    }
+  }
+}
