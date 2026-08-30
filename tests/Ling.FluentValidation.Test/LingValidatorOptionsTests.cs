@@ -9,7 +9,7 @@ public sealed class LingValidatorOptionsTests
         try
         {
             var culture = new CultureInfo("zh-CN");
-            ValidatorOptions.Global.LanguageManager = new global::FluentValidation.Resources.LanguageManager
+            ValidatorOptions.Global.LanguageManager = new LanguageManager
             {
                 Culture = culture,
                 Enabled = false,
@@ -17,7 +17,7 @@ public sealed class LingValidatorOptionsTests
 
             var registered = LingValidatorOptions.RegisterTranslations();
 
-            var languageManager = Assert.IsType<global::FluentValidation.Resources.LanguageManager>(ValidatorOptions.Global.LanguageManager);
+            var languageManager = Assert.IsType<LanguageManager>(ValidatorOptions.Global.LanguageManager);
             Assert.True(registered);
             Assert.Same(culture, languageManager.Culture);
             Assert.False(languageManager.Enabled);
@@ -51,6 +51,27 @@ public sealed class LingValidatorOptionsTests
     }
 
     [Fact]
+    public void RegisterTranslations_RegistersAReplacementLanguageManager()
+    {
+        var previous = ValidatorOptions.Global.LanguageManager;
+        try
+        {
+            ValidatorOptions.Global.LanguageManager = new LanguageManager();
+            Assert.True(LingValidatorOptions.RegisterTranslations());
+
+            var replacement = new LanguageManager();
+            ValidatorOptions.Global.LanguageManager = replacement;
+
+            Assert.True(LingValidatorOptions.RegisterTranslations());
+            Assert.NotEmpty(replacement.GetString("Ling_UrlValidator", new CultureInfo("en-US")));
+        }
+        finally
+        {
+            ValidatorOptions.Global.LanguageManager = previous;
+        }
+    }
+
+    [Fact]
     public void TranslationCatalog_ContainsOnlyCompleteEntries()
     {
         Assert.Equal(410, LingValidatorTranslations.All.Count);
@@ -65,7 +86,7 @@ public sealed class LingValidatorOptionsTests
         });
     }
 
-    private sealed class CustomLanguageManager : global::FluentValidation.Resources.ILanguageManager
+    private sealed class CustomLanguageManager : ILanguageManager
     {
         public bool Enabled { get; set; } = true;
 

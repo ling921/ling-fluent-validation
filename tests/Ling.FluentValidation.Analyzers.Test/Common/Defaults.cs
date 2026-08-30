@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Test.Common;
+namespace Ling.FluentValidation.Test.Common;
 
 internal static class Defaults
 {

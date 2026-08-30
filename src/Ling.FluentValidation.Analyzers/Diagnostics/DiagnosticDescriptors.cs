@@ -1,4 +1,4 @@
-﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis;
 
 #pragma warning disable IDE0090 // Use 'new DiagnosticDescriptor(...)'
 

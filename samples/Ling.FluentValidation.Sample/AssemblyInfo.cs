@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation;
+using Ling.FluentValidation;
 using Ling.FluentValidation.Annotations;
 using Ling.FluentValidation.Sample.Models;
 

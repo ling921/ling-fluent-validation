@@ -1,4 +1,7 @@
-﻿namespace Ling.FluentValidation.Generators.Test.Common;
+using FV = FluentValidation;
+using LFVAnnotations = Ling.FluentValidation.Annotations;
+
+namespace Ling.FluentValidation.Generators.Test.Common;
 
 internal static class ReferenceHelper
 {
@@ -12,9 +15,9 @@ internal static class ReferenceHelper
         yield return Libs.SystemObjectModel;
         yield return Libs.SystemCollectionsConcurrent;
         yield return Libs.SystemTextRegularExpressions;
-        yield return MetadataReference.CreateFromFile(typeof(global::FluentValidation.IValidator).Assembly.Location);
+        yield return MetadataReference.CreateFromFile(typeof(FV.IValidator).Assembly.Location);
         yield return MetadataReference.CreateFromFile(typeof(IRuleBuilderExtensions).Assembly.Location);
-        yield return MetadataReference.CreateFromFile(typeof(global::Ling.FluentValidation.Annotations.GenerateValidatorAttribute).Assembly.Location);
+        yield return MetadataReference.CreateFromFile(typeof(LFVAnnotations.GenerateValidatorAttribute).Assembly.Location);
     }
 
     public static string TargetFramework =>

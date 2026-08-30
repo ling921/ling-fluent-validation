@@ -1,16 +1,14 @@
 using FluentValidation.Resources;
-using System.Collections.ObjectModel;
 
 namespace Ling.FluentValidation;
 
 /// <summary>
 /// Provides all translations used by Ling validators.
 /// </summary>
-public static class LingValidatorTranslations
+public static partial class LingValidatorTranslations
 {
     private static readonly IReadOnlyList<Resources.LanguageTranslation> TranslationList =
-        new ReadOnlyCollection<Resources.LanguageTranslation>(
-            new List<Resources.LanguageTranslation>(new Resources.LanguageManager().Translations));
+        new TranslationBuilder().Translations;
 
     /// <summary>
     /// Gets all available translations. Custom <see cref="ILanguageManager"/> implementations can use this
@@ -22,7 +20,7 @@ public static class LingValidatorTranslations
     /// Adds every Ling translation to a FluentValidation language manager.
     /// </summary>
     /// <param name="languageManager">The language manager to update.</param>
-    public static void AddTo(global::FluentValidation.Resources.LanguageManager languageManager)
+    public static void AddTo(LanguageManager languageManager)
     {
         if (languageManager is null)
         {

@@ -10,6 +10,8 @@ namespace Ling.FluentValidation;
 /// </summary>
 public static class LingValidatorOptions
 {
+    private static readonly object TranslationRegistrationLock = new();
+    private static LanguageManager? _registeredLanguageManager;
     private static int _customLanguageManagerWarningWritten;
 
     /// <summary>
@@ -19,9 +21,22 @@ public static class LingValidatorOptions
     public static bool RegisterTranslations()
     {
         var current = ValidatorOptions.Global.LanguageManager;
-        if (current is global::FluentValidation.Resources.LanguageManager languageManager)
+        if (current is LanguageManager languageManager)
         {
-            LingValidatorTranslations.AddTo(languageManager);
+            if (ReferenceEquals(Volatile.Read(ref _registeredLanguageManager), languageManager))
+            {
+                return true;
+            }
+
+            lock (TranslationRegistrationLock)
+            {
+                if (!ReferenceEquals(_registeredLanguageManager, languageManager))
+                {
+                    LingValidatorTranslations.AddTo(languageManager);
+                    Volatile.Write(ref _registeredLanguageManager, languageManager);
+                }
+            }
+
             return true;
         }
 

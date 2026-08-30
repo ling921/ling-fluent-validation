@@ -1,8 +1,9 @@
-﻿#if NETCOREAPP3_1
+#if NETCOREAPP3_1
 #pragma warning disable IDE0060,RCS1163
 
 using FluentValidation.Internal;
 using FluentValidation.Resources;
+using FV = FluentValidation;
 
 namespace Ling.FluentValidation.Validators;
 
@@ -10,7 +11,7 @@ namespace Ling.FluentValidation.Validators;
 /// Represents context information for a validation operation.
 /// </summary>
 /// <typeparam name="T">The type of the object being validated.</typeparam>
-public sealed class ValidationContext<T> : global::FluentValidation.ValidationContext<T>
+public sealed class ValidationContext<T> : FV.ValidationContext<T>
 {
     /// <summary>
     /// Gets the message formatter.
@@ -60,6 +61,8 @@ public abstract class PropertyValidator<T, TProperty> : PropertyValidator
     /// <inheritdoc/>
     protected override bool IsValid(PropertyValidatorContext context)
     {
+        LingValidatorOptions.RegisterTranslations();
+
         var value = context.PropertyValue is TProperty v ? v : default;
         var context2 = new ValidationContext<T>((T)context.InstanceToValidate);
 

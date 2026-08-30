@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks if a string is a valid phone number.
@@ -56,6 +56,7 @@ public class PhoneValidator<T> : PropertyValidator<T, string?>
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 

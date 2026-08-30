@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks if a file name string has a valid extension.
@@ -70,6 +70,7 @@ public class FileExtensionsValidator<T> : PropertyValidator<T, string?>
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Annotations;
+namespace Ling.FluentValidation.Annotations;
 
 /// <summary>
 /// Represents the base class for validation attributes.

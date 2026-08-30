@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Annotations;
+namespace Ling.FluentValidation.Annotations;
 
 /// <summary>
 /// Used to validate that a file name extension is one of the allowed extensions.

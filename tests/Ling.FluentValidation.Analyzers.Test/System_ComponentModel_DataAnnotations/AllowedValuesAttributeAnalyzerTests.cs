@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.Analyzers.Diagnostics;
+using Ling.FluentValidation.Analyzers.Diagnostics;
 using Ling.FluentValidation.Analyzers.System_ComponentModel_DataAnnotations;
 using Ling.FluentValidation.CodeFixes;
 using Ling.FluentValidation.Test.Common;

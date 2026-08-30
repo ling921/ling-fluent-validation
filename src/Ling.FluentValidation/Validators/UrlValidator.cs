@@ -1,4 +1,4 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 
 namespace Ling.FluentValidation.Validators;
 
@@ -37,6 +37,7 @@ public partial class UrlValidator<T> : PropertyValidator<T, string?>
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 }

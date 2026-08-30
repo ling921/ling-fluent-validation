@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.CodeFixes.Infrastructure;
+using Ling.FluentValidation.CodeFixes.Infrastructure;
 
 namespace Ling.FluentValidation.Test.CodeFixesTests.Infrastructure;
 

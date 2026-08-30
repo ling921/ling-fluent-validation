@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation;
+namespace Ling.FluentValidation;
 
 internal static class Constants
 {
