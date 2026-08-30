@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks for a maximum length of a collection.

@@ -1,5 +1,5 @@
-﻿global using FluentValidation;
-global using Ling.FluentValidation.Resources;
+global using FluentValidation;
+global using FluentValidation.Resources;
 global using Ling.FluentValidation.Test.Common;
 global using Ling.FluentValidation.Validators;
 global using System.ComponentModel.DataAnnotations;

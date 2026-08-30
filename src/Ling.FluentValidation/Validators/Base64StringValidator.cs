@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks if a string is a valid base64 string.
@@ -59,6 +59,7 @@ public class Base64StringValidator<T> : PropertyValidator<T, string?>
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 

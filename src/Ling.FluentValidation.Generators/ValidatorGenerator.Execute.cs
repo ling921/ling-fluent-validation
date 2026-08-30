@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.Extensions;
+using Ling.FluentValidation.Extensions;
 using Ling.FluentValidation.Generators.Helpers;
 using Ling.FluentValidation.Generators.Models;
 using Microsoft.CodeAnalysis;

@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Annotations;
+namespace Ling.FluentValidation.Annotations;
 
 /// <summary>
 /// Used to validate that length of a <c>string</c> or <c>IEnumerable&lt;T&gt;</c> property is in range.

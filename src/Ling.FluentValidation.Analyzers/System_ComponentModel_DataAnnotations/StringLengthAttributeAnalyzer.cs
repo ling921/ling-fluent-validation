@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.Extensions;
+using Ling.FluentValidation.Extensions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 using System.Collections.Immutable;

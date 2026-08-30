@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Annotations;
+namespace Ling.FluentValidation.Annotations;
 
 /// <summary>
 /// Used to validate that a property or field is equals to a value.

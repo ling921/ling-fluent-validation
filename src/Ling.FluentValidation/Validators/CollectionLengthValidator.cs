@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks the length of a collection.
@@ -64,6 +64,7 @@ public class CollectionLengthValidator<T, TProperty> : PropertyValidator<T, TPro
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 

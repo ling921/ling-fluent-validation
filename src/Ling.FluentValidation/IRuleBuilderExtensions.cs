@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation;
+namespace Ling.FluentValidation;
 
 /// <summary>
 /// Extension methods that provide the default set of validators.

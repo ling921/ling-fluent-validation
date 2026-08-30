@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Test.Common;
+namespace Ling.FluentValidation.Test.Common;
 
 public abstract class ValidatorTestBase
 {

@@ -1,4 +1,4 @@
-﻿global using Ling.FluentValidation.Generators.Test.Common;
+global using Ling.FluentValidation.Generators.Test.Common;
 global using Microsoft.CodeAnalysis;
 global using Microsoft.CodeAnalysis.CSharp;
 global using System.Text;

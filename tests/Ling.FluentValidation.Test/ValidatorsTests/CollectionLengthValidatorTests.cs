@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Test.ValidatorsTests;
+namespace Ling.FluentValidation.Test.ValidatorsTests;
 
 public sealed class CollectionLengthValidatorTests : ValidatorTestBase
 {

@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Validators;
+namespace Ling.FluentValidation.Validators;
 
 /// <summary>
 /// Represents a validator that checks if a value is one of the allowed values.
@@ -60,6 +60,7 @@ public class AllowedValuesValidator<T, TProperty> : PropertyValidator<T, TProper
     /// <inheritdoc/>
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
+        LingValidatorOptions.RegisterTranslations();
         return Localized(errorCode, Name);
     }
 }

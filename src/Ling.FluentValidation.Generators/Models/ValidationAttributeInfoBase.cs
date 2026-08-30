@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.Generators.Helpers;
+using Ling.FluentValidation.Generators.Helpers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Text.RegularExpressions;

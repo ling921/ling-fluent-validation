@@ -1,4 +1,4 @@
-﻿using Ling.FluentValidation.Analyzers.Diagnostics;
+using Ling.FluentValidation.Analyzers.Diagnostics;
 using Ling.FluentValidation.Analyzers.Infrastructure;
 using Ling.FluentValidation.Extensions;
 using Microsoft.CodeAnalysis;

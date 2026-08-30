@@ -1,4 +1,4 @@
-﻿namespace Ling.FluentValidation.Test.Common;
+namespace Ling.FluentValidation.Test.Common;
 
 internal static class ReferenceHelper
 {
@@ -11,7 +11,7 @@ internal static class ReferenceHelper
         yield return Libs.SystemTextRegularExpressions;
 
         yield return MetadataReference.CreateFromFile(typeof(IRuleBuilderExtensions).Assembly.Location);
-        yield return MetadataReference.CreateFromFile(typeof(global::Ling.FluentValidation.Annotations.GenerateValidatorAttribute).Assembly.Location);
+        yield return MetadataReference.CreateFromFile(typeof(Ling.FluentValidation.Annotations.GenerateValidatorAttribute).Assembly.Location);
     }
 
     public static string TargetFramework =>
