@@ -90,6 +90,16 @@ jobs:
             dotnet pack "${arguments[@]}"
           done
 
+      - name: Verify package icons
+        shell: bash
+        run: |
+          for package in "$NUGET_DIRECTORY"/*.nupkg
+          do
+            case "$package" in *.snupkg) continue ;; esac
+            unzip -Z1 "$package" | grep -Fx 'icon.png'
+            unzip -p "$package" '*.nuspec' | grep -F '<icon>icon.png</icon>'
+          done
+
       - name: NuGet login (OIDC to temporary API key)
         uses: NuGet/login@v1
         id: login

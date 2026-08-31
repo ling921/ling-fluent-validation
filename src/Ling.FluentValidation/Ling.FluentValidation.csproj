@@ -21,6 +21,7 @@
     <Copyright>Copyright © 2024- ling921 All rights reserved.</Copyright>
     <PackageTags>ling, fluent-validation, validation, source-generator</PackageTags>
     <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddCompilerAssets</TargetsForTfmSpecificContentInPackage>
   </PropertyGroup>
