@@ -59,6 +59,10 @@ jobs:
           unzip -Z1 "$annotations" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.Analyzers.dll'
           unzip -Z1 "$annotations" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.CodeFixes.dll'
           unzip -Z1 "$runtime" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.Generators.dll'
+          unzip -Z1 "$annotations" | grep -Fx 'icon.png'
+          unzip -Z1 "$runtime" | grep -Fx 'icon.png'
+          unzip -p "$annotations" '*.nuspec' | grep -F '<icon>icon.png</icon>'
+          unzip -p "$runtime" '*.nuspec' | grep -F '<icon>icon.png</icon>'
 
   compatibility-test:
     permissions:
