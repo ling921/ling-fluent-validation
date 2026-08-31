@@ -18,7 +18,7 @@ public static class DiagnosticDescriptors
         DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Validator generation is explicit and requires GenerateValidatorAttribute.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when the validator should inherit 'IValidator&lt;T&gt;'.
@@ -34,7 +34,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The validator should inherit 'IValidator<T>'.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when the validator included is not compatible.
@@ -50,7 +50,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The validator included is not compatible.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when an attribute should used on specific type property or field.
@@ -66,7 +66,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Attribute should used on specific type property or field.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when an attribute should used on specific type property or field.
@@ -82,7 +82,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Attribute should used on specific type property or field.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when an attribute should used on specific type property or field.
@@ -98,7 +98,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Attribute should used on specific type property or field.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when an attribute should used on specific type property or field.
@@ -114,7 +114,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Attribute should used on specific type property or field.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a attribute parameter should be assignable to property or field.
@@ -130,7 +130,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Attribute parameter should be assignable to property or field.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a validator type should inherit PropertyValidator or AbstractValidator.
@@ -146,7 +146,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The validator type should inherit PropertyValidator<T, TProperty> or AbstractValidator<TProperty>.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a type should have public parameterless constructor.
@@ -162,7 +162,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The type should have public parameterless instance constructor.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a type should implement another type.
@@ -178,7 +178,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The type should implement another type.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a type should implement one of two types.
@@ -194,7 +194,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The type should implement one of two types.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when a type should assignable to another type.
@@ -210,7 +210,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "The type should assignable to another type.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a diagnostic indicating that an attribute target cannot be handled by the source generator.
@@ -223,7 +223,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "Validation attributes must target accessible instance members on non-generic classes.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when AllowedValuesAttribute should have at least one value.
@@ -239,7 +239,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
         description: "AllowedValuesAttribute should have at least one value.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when DeniedValuesAttribute should have at least one value.
@@ -255,7 +255,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
         description: "DeniedValuesAttribute should have at least one value.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when CompareAttribute should specify property.
@@ -271,7 +271,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "CompareAttribute should specify property.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when CompareAttribute should specify same type property.
@@ -287,7 +287,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "CompareAttribute should specify same type property.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when LengthAttribute should used on countable property.
@@ -303,7 +303,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true,
         description: "LengthAttribute should used on countable property.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a diagnostic indicating that equal minimum and maximum length values
@@ -317,7 +317,7 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Info,
         isEnabledByDefault: true,
         description: "Equal minimum and maximum values can be expressed with the exact-length constructor.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 
     /// <summary>
     /// Gets a <see cref="DiagnosticDescriptor"/> indicating when using attribute of namespace 'System.ComponentModel.DataAnnotations'.
@@ -333,5 +333,5 @@ public static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Info,
         isEnabledByDefault: true,
         description: "Use attribute of namespace 'Ling.FluentValidation.Annotations' instead of 'System.ComponentModel.DataAnnotations'.",
-        helpLinkUri: "https://github.com/ling921/fluent-validation-generator");
+        helpLinkUri: Constants.RepositoryUrl);
 }

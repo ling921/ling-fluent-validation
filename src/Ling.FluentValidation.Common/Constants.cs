@@ -2,6 +2,8 @@ namespace Ling.FluentValidation;
 
 internal static class Constants
 {
+    public const string RepositoryUrl = "https://github.com/ling921/ling-fluent-validation";
+
     public const string AttributeNamespace = "Ling.FluentValidation.Annotations";
     public const string SystemAttributeNamespace = "System.ComponentModel.DataAnnotations";
 

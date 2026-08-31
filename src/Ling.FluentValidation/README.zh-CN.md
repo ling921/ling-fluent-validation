@@ -1,6 +1,6 @@
 # Ling.FluentValidation
 
-[English](https://github.com/ling921/fluent-validation-generator/blob/master/src/Ling.FluentValidation/README.md) | 简体中文 | [项目文档](https://github.com/ling921/fluent-validation-generator/blob/master/README.zh-CN.md)
+[English](https://github.com/ling921/ling-fluent-validation/blob/master/src/Ling.FluentValidation/README.md) | 简体中文 | [项目文档](https://github.com/ling921/ling-fluent-validation/blob/master/README.zh-CN.md)
 
 `Ling.FluentValidation` 提供源代码生成器、FluentValidation 规则扩展和兼容的运行时验证器。生成器以仅编译期资产的方式分发；DTO 声明则位于零 FluentValidation 依赖的 `Ling.FluentValidation.Annotations` 包中。
 
@@ -108,4 +108,4 @@ ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("zh-CN");
 
 ## 协议
 
-[MIT](https://github.com/ling921/fluent-validation-generator/blob/master/LICENSE)
+[MIT](https://github.com/ling921/ling-fluent-validation/blob/master/LICENSE)

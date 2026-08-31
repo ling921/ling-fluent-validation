@@ -1,6 +1,6 @@
 # Ling.FluentValidation.Annotations
 
-[English](https://github.com/ling921/fluent-validation-generator/blob/master/src/Ling.FluentValidation.Annotations/README.md) | 简体中文 | [项目文档](https://github.com/ling921/fluent-validation-generator/blob/master/README.zh-CN.md)
+[English](https://github.com/ling921/ling-fluent-validation/blob/master/src/Ling.FluentValidation.Annotations/README.md) | 简体中文 | [项目文档](https://github.com/ling921/ling-fluent-validation/blob/master/README.zh-CN.md)
 
 `Ling.FluentValidation.Annotations` 提供用于标记 DTO 和描述校验规则的纯声明 API。它不依赖 FluentValidation，因此共享的 Contracts 项目不会被迫引入校验运行时依赖。
 
@@ -94,4 +94,4 @@ using MyApplication.Contracts;
 
 ## 协议
 
-[MIT](https://github.com/ling921/fluent-validation-generator/blob/master/LICENSE)
+[MIT](https://github.com/ling921/ling-fluent-validation/blob/master/LICENSE)

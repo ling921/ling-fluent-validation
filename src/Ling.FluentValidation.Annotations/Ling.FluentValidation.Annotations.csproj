@@ -8,7 +8,7 @@
     <PackageTags>ling, validation, annotations, analyzers</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ling921/fluent-validation-generator</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ling921/ling-fluent-validation</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddCompilerAssets</TargetsForTfmSpecificContentInPackage>
