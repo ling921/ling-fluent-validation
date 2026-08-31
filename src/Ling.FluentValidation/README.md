@@ -1,6 +1,6 @@
 # Ling.FluentValidation
 
-[Project documentation](https://github.com/ling921/fluent-validation-generator#readme) | [简体中文](https://github.com/ling921/fluent-validation-generator/blob/master/src/Ling.FluentValidation/README.zh-CN.md)
+[Project documentation](https://github.com/ling921/ling-fluent-validation#readme) | [简体中文](https://github.com/ling921/ling-fluent-validation/blob/master/src/Ling.FluentValidation/README.zh-CN.md)
 
 `Ling.FluentValidation` provides the source generator, FluentValidation rule extensions, and compatible runtime validators. The generator is shipped as a compiler-only asset, while DTO declarations live in the dependency-free `Ling.FluentValidation.Annotations` package.
 
@@ -108,4 +108,4 @@ The package uses a tested FluentValidation major-version range for each target f
 
 ## License
 
-[MIT](https://github.com/ling921/fluent-validation-generator/blob/master/LICENSE)
+[MIT](https://github.com/ling921/ling-fluent-validation/blob/master/LICENSE)

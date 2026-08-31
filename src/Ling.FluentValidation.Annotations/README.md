@@ -1,6 +1,6 @@
 # Ling.FluentValidation.Annotations
 
-[Project documentation](https://github.com/ling921/fluent-validation-generator#readme) | [简体中文](https://github.com/ling921/fluent-validation-generator/blob/master/src/Ling.FluentValidation.Annotations/README.zh-CN.md)
+[Project documentation](https://github.com/ling921/ling-fluent-validation#readme) | [简体中文](https://github.com/ling921/ling-fluent-validation/blob/master/src/Ling.FluentValidation.Annotations/README.zh-CN.md)
 
 `Ling.FluentValidation.Annotations` contains the declaration-only API for marking DTOs and describing validation rules. It does not depend on FluentValidation, so shared Contracts projects do not acquire a validation-runtime dependency.
 
@@ -94,4 +94,4 @@ Newer applications automatically select the compatible asset.
 
 ## License
 
-[MIT](https://github.com/ling921/fluent-validation-generator/blob/master/LICENSE)
+[MIT](https://github.com/ling921/ling-fluent-validation/blob/master/LICENSE)
