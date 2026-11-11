@@ -1,10 +1,10 @@
+using System.Collections.Immutable;
+using System.Xml.Linq;
 using Ling.FluentValidation.Analyzers.Diagnostics;
 using Ling.FluentValidation.Analyzers.Infrastructure;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using System.Collections.Immutable;
-using System.Xml.Linq;
 
 namespace Ling.FluentValidation.Analyzers;
 

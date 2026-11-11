@@ -5,7 +5,7 @@ inputs:
   dotnet-version:
     description: One or more .NET SDK channels to install
     required: false
-    default: 10.0.x
+    default: 11.0.x
 
 runs:
   using: composite

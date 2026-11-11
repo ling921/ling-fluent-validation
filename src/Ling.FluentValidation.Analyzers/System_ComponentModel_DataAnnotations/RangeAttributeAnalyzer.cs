@@ -1,8 +1,8 @@
+using System.Collections.Immutable;
 using Ling.FluentValidation.Analyzers.Infrastructure;
 using Ling.FluentValidation.Extensions;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Analyzers.System_ComponentModel_DataAnnotations;
 

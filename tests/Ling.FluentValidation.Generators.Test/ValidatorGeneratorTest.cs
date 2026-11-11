@@ -1,6 +1,6 @@
+using System.Collections.Immutable;
 using Ling.FluentValidation.Generators;
 using Microsoft.CodeAnalysis.Emit;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Generators.Test;
 

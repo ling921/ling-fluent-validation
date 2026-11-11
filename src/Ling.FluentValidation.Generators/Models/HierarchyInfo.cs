@@ -1,7 +1,7 @@
-using Ling.FluentValidation.Extensions;
-using Microsoft.CodeAnalysis;
 using System.Collections;
 using System.Collections.Immutable;
+using Ling.FluentValidation.Extensions;
+using Microsoft.CodeAnalysis;
 using static Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle;
 
 namespace Ling.FluentValidation.Generators.Models;
