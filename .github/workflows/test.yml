@@ -96,3 +96,15 @@ jobs:
 
       - name: Run tests on their target runtimes
         run: dotnet test Ling.FluentValidation.sln --configuration Release --no-build --no-restore --verbosity normal
+
+  test:
+    name: test
+    needs: [build-and-pack, compatibility-test]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify status
+        run: |
+          if [ "${{ needs.build-and-pack.result }}" != "success" ] || [ "${{ needs.compatibility-test.result }}" != "success" ]; then
+            exit 1
+          fi
