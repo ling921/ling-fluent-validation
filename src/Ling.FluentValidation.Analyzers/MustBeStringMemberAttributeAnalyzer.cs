@@ -1,9 +1,9 @@
+using System.Collections.Immutable;
 using Ling.FluentValidation.Analyzers.Diagnostics;
 using Ling.FluentValidation.Analyzers.Infrastructure;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Analyzers;
 

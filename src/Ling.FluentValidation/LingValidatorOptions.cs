@@ -1,7 +1,7 @@
-using FluentValidation;
-using FluentValidation.Resources;
 using System.Diagnostics;
 using System.Threading;
+using FluentValidation;
+using FluentValidation.Resources;
 
 namespace Ling.FluentValidation;
 

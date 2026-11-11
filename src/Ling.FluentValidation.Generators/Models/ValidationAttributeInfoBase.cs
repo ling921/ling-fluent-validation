@@ -1,7 +1,7 @@
+using System.Text.RegularExpressions;
 using Ling.FluentValidation.Generators.Helpers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using System.Text.RegularExpressions;
 
 namespace Ling.FluentValidation.Generators.Models;
 

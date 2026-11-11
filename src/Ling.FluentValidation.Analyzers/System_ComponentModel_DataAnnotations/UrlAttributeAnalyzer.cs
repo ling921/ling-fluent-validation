@@ -1,6 +1,6 @@
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Analyzers.System_ComponentModel_DataAnnotations;
 

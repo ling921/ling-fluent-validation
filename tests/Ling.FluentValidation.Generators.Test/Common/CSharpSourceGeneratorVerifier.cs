@@ -1,7 +1,7 @@
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis.CSharp.Testing;
 using Microsoft.CodeAnalysis.Testing;
 using Microsoft.CodeAnalysis.Text;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Generators.Test.Common;
 

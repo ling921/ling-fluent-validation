@@ -1,6 +1,6 @@
-using Microsoft.CodeAnalysis;
 using System.Collections.Immutable;
 using System.Text;
+using Microsoft.CodeAnalysis;
 
 namespace Ling.FluentValidation.Generators.Models;
 

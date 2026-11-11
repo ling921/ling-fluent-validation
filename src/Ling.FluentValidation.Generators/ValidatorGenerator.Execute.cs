@@ -1,9 +1,9 @@
+using System.Collections.Immutable;
 using Ling.FluentValidation.Extensions;
 using Ling.FluentValidation.Generators.Helpers;
 using Ling.FluentValidation.Generators.Models;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using System.Collections.Immutable;
 
 namespace Ling.FluentValidation.Generators;
 

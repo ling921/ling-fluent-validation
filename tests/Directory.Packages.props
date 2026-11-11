@@ -35,7 +35,8 @@
                          '$(TargetFramework)' == 'net7.0' or
                          '$(TargetFramework)' == 'net8.0' or
                          '$(TargetFramework)' == 'net9.0' or
-                         '$(TargetFramework)' == 'net10.0' ">
+                         '$(TargetFramework)' == 'net10.0' or
+                         '$(TargetFramework)' == 'net11.0' ">
     <PackageVersion Include="coverlet.collector" Version="6.0.2" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageVersion Include="System.Formats.Asn1" Version="8.0.1" />
