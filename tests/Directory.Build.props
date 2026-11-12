@@ -6,14 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
+    <IsTestProject Condition="'$(IsTestProject)' == ''">true</IsTestProject>
 
     <!-- Disable package warnings for test projects. -->
     <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
     <NoWarn>$(NoWarn);CA1861</NoWarn>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(IsTestProject)' == 'true'">
     <PackageReference Include="coverlet.collector">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>All</PrivateAssets>
@@ -27,11 +27,11 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+  <ItemGroup Condition=" '$(IsTestProject)' == 'true' and '$(TargetFramework)' == 'netcoreapp3.1' ">
     <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(IsTestProject)' == 'true'">
     <Using Include="Xunit" />
   </ItemGroup>
   

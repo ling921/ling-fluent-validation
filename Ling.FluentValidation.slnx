@@ -25,5 +25,6 @@
     <Project Path="tests/Ling.FluentValidation.Analyzers.Test/Ling.FluentValidation.Analyzers.Test.csproj" />
     <Project Path="tests/Ling.FluentValidation.Generators.Test/Ling.FluentValidation.Generators.Test.csproj" />
     <Project Path="tests/Ling.FluentValidation.Test/Ling.FluentValidation.Test.csproj" />
+    <Project Path="tests/Ling.FluentValidation.Annotations.NativeAotSmoke/Ling.FluentValidation.Annotations.NativeAotSmoke.csproj" />
   </Folder>
 </Solution>
