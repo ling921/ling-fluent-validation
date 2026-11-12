@@ -131,8 +131,8 @@ ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("zh-CN");
 ## 示例与开发
 
 - 跨程序集示例：[`samples/Ling.FluentValidation.Sample`](samples/README.md)
-- 构建：`dotnet build Ling.FluentValidation.sln`
-- 在全部受支持运行时上测试：`dotnet test Ling.FluentValidation.sln -c Release`
+- 构建：`dotnet build Ling.FluentValidation.slnx`
+- 在全部受支持运行时上测试：`dotnet test Ling.FluentValidation.slnx -c Release`
 
 ## 参与贡献
 

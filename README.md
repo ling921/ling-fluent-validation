@@ -131,8 +131,8 @@ Only types in the current assembly and assemblies selected with `GenerateValidat
 ## Samples and development
 
 - Cross-assembly sample: [`samples/Ling.FluentValidation.Sample`](samples/README.md)
-- Build: `dotnet build Ling.FluentValidation.sln`
-- Test all supported runtimes: `dotnet test Ling.FluentValidation.sln -c Release`
+- Build: `dotnet build Ling.FluentValidation.slnx`
+- Test all supported runtimes: `dotnet test Ling.FluentValidation.slnx -c Release`
 
 ## Contributing
 

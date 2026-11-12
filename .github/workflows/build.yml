@@ -45,13 +45,13 @@ jobs:
             11.0.x
 
       - name: Restore dependencies
-        run: dotnet restore Ling.FluentValidation.sln
+        run: dotnet restore Ling.FluentValidation.slnx
 
       - name: Build
-        run: dotnet build Ling.FluentValidation.sln --configuration Release --no-restore -p:ContinuousIntegrationBuild=true
+        run: dotnet build Ling.FluentValidation.slnx --configuration Release --no-restore -p:ContinuousIntegrationBuild=true
 
       - name: Run tests on their target runtimes
-        run: dotnet test Ling.FluentValidation.sln --configuration Release --no-build --no-restore --verbosity normal
+        run: dotnet test Ling.FluentValidation.slnx --configuration Release --no-build --no-restore --verbosity normal
 
   publish:
     needs: compatibility-test
@@ -76,7 +76,7 @@ jobs:
       - uses: ./.github/actions/setup-env
 
       - name: Restore dependencies
-        run: dotnet restore Ling.FluentValidation.sln
+        run: dotnet restore Ling.FluentValidation.slnx
 
       - name: Pack
         shell: bash

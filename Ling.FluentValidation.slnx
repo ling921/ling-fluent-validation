@@ -1,0 +1,29 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Ling.FluentValidation.Sample.Contracts/Ling.FluentValidation.Sample.Contracts.csproj" />
+    <Project Path="samples/Ling.FluentValidation.Sample/Ling.FluentValidation.Sample.csproj" />
+  </Folder>
+  <Folder Name="/solution items/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <File Path="src/Directory.Build.props" />
+    <File Path="src/Directory.Packages.props" />
+    <Project Path="src/Ling.FluentValidation.Analyzers/Ling.FluentValidation.Analyzers.csproj" />
+    <Project Path="src/Ling.FluentValidation.Annotations/Ling.FluentValidation.Annotations.csproj" />
+    <Project Path="src/Ling.FluentValidation.CodeFixes/Ling.FluentValidation.CodeFixes.csproj" />
+    <Project Path="src/Ling.FluentValidation.Common/Ling.FluentValidation.Common.shproj" />
+    <Project Path="src/Ling.FluentValidation.Generators/Ling.FluentValidation.Generators.csproj" />
+    <Project Path="src/Ling.FluentValidation/Ling.FluentValidation.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <File Path="tests/Directory.Build.props" />
+    <File Path="tests/Directory.Packages.props" />
+    <Project Path="tests/Ling.FluentValidation.Analyzers.Test/Ling.FluentValidation.Analyzers.Test.csproj" />
+    <Project Path="tests/Ling.FluentValidation.Generators.Test/Ling.FluentValidation.Generators.Test.csproj" />
+    <Project Path="tests/Ling.FluentValidation.Test/Ling.FluentValidation.Test.csproj" />
+  </Folder>
+</Solution>
