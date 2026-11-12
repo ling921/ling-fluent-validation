@@ -58,11 +58,19 @@ jobs:
           runtime=$(find artifacts/package -name 'Ling.FluentValidation.*.nupkg' ! -name '*.Annotations.*' ! -name '*.snupkg' -print -quit)
           unzip -Z1 "$annotations" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.Analyzers.dll'
           unzip -Z1 "$annotations" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.CodeFixes.dll'
+          unzip -Z1 "$annotations" | grep -Fx 'lib/netstandard2.0/Ling.FluentValidation.Annotations.dll'
+          unzip -Z1 "$annotations" | grep -Fx 'lib/net7.0/Ling.FluentValidation.Annotations.dll'
+          unzip -Z1 "$annotations" | grep -Fx 'lib/net8.0/Ling.FluentValidation.Annotations.dll'
           unzip -Z1 "$runtime" | grep -Fx 'analyzers/dotnet/cs/Ling.FluentValidation.Generators.dll'
           unzip -Z1 "$annotations" | grep -Fx 'icon.png'
           unzip -Z1 "$runtime" | grep -Fx 'icon.png'
           unzip -p "$annotations" '*.nuspec' | grep -F '<icon>icon.png</icon>'
           unzip -p "$runtime" '*.nuspec' | grep -F '<icon>icon.png</icon>'
+
+      - name: Verify Native AOT publish and execution for Ling.FluentValidation.Annotations
+        run: |
+          dotnet publish tests/Ling.FluentValidation.Annotations.NativeAotSmoke/Ling.FluentValidation.Annotations.NativeAotSmoke.csproj --configuration Release --runtime linux-x64 --self-contained true -warnaserror
+          ./tests/Ling.FluentValidation.Annotations.NativeAotSmoke/bin/Release/net11.0/linux-x64/publish/Ling.FluentValidation.Annotations.NativeAotSmoke
 
   compatibility-test:
     permissions:
